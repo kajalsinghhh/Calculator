@@ -31,6 +31,6 @@ const togglerIcon = document.querySelector(`.toggler-icon`);
 let isDark = true;
 themeToggleBtn.onclick = () => {
     calculator.classList.toggle('dark');
-    themeToggleBtn[0].classList.toggle('active');
+    themeToggleBtn.classList.toggle('active');
     isDark =!isDark;
 }
