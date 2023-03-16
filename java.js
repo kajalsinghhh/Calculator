@@ -12,8 +12,8 @@ buttons.forEach((item)=> {
             display.innerText = string.substr(0, string.length - 1);
 
         }
-        else if(display.innerText == '16-03-2000'  && item.id == 'equal'){
-            display.innerText = "HAPPY BIRTHDAY TO YOU;
+        else if((display.innerText == '16-03-2000' || display.innerText == '16-3-2000')  && item.id == 'equal'){
+            display.innerText = "HAPPY BIRTHDAY TO YOU";
             setTimeout(() => (display.innerText = ''),4000);
             
         }
