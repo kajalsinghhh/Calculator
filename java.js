@@ -11,11 +11,13 @@ buttons.forEach((item)=> {
             let string = display.innerText.toString();
             display.innerText = string.substr(0, string.length - 1);
 
-        }else if((display.innerText == '16-03-2000' || display.innerText == '16-3-2000') && item.id == 'equal'){
+        }
+        else if(display.innerText == '16-03-2000'  && item.id == 'equal'){
             display.innerText = "HAPPY BIRTHDAY TO YOU;
             setTimeout(() => (display.innerText = ''),4000);
             
-        } else if(display.innerText != '' && item.id == 'equal'){
+        }
+        else if(display.innerText != '' && item.id == 'equal'){
             display.innerText = eval(display.innerText);
             
         }
